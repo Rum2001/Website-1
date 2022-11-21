@@ -11,6 +11,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/9ce611c48b.js" crossorigin="anonymous"></script>
     <title>Home</title>
     <style>
         * {
@@ -138,80 +139,14 @@
         .nav-link:hover {
             color: #6440FB;
         }
-
-        .middle {
-            position: absolute;
-            top: 1.75rem;
-            left: 75%;
-            transform: translate(-50%, -50%);
-        }
-
-        .input {
-            width: 20px;
-            height: 20px;
-            background: none;
-            border-radius: 50px;
-            border: 2px solid #333;
-            box-sizing: border-box;
-            outline: none;
-            transition: width 0.4s ease-in-out,
-                border-radius 0.8s ease-in-out,
-                padding 0.2s;
-            transition-delay: 0.4s;
-            color: blac;
-            font-size: 20px;
-        }
-
-        .inclicked {
-            width: 18rem;
-            border-radius: 1rem;
-            padding: 0 15px;
-            padding-right: 40px;
-            height: 2.5rem;
-        }
-
-        .btn {
-            position: absolute;
-            width: 45px;
-            height: 45px;
-            top: 0;
-            right: 0;
-            box-sizing: border-box;
-            background: none;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
-
-        .btn::before {
-            content: "";
-            width: 2px;
-            height: 12px;
-            background: black;
-            position: absolute;
-            transform: rotate(-50deg);
-            bottom: 18px;
-            right: -6px;
-            transition: 0.3s;
-        }
-
-        .close::before,
-        .close::after {
-            content: "";
-            width: 2px;
-            height: 20px;
-            background: black;
-            position: absolute;
-            bottom: 1rem;
-            right: 28px;
-        }
-
-        .close::before {
-            transform: rotate(-45deg);
-        }
-
-        .close::after {
-            transform: rotate(45deg);
+        @media screen and (max-width:992px) {
+            .toggle{
+                display: none;
+            }
+            .menu{
+                display: none;
+            }
+            
         }
     </style>
 </head>
@@ -219,69 +154,70 @@
 <body>
     <div class="navigation p-2">
         <div class="container">
-            <div class="navbar-menu flex align-items-center">
-                <div class="logo mx-2 ">
-                    <a href="https://demoapus1.com/educrat/learnpress/">
+            <div class="navbar-menu flex align-items-center justify-content-between">
+                <div class="logo mx-2 flex align-items-center">
+                    <a href="home.blade.html">
                         <span class="logo-main">
                             <img width="140" height="50"
                                 src="https://demoapus1.com/educrat/learnpress/wp-content/uploads/2022/07/logo.svg"
                                 class="attachment-full size-full" alt="" decoding="async" loading="lazy"> </span>
                     </a>
-                </div>
-                <div class="toggle">
-                    <div id="toggle-button" class="flex align-items-center">
-                        <div class="line-group mx-2">
-                            <div class="line1"></div>
-                            <div class="line2"></div>
-                            <div class="line3"></div>
+                    <div class="toggle mx-2">
+                        <div id="toggle-button" class="flex align-items-center">
+                            <div class="line-group mx-2">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="line3"></div>
+                            </div>
+                            <div class="explore">
+                                <p>Explore</p>
+                            </div>
                         </div>
-                        <div class="explore">
-                            <p>Explore</p>
+                        <div class="toggle-items">
+                            <a href="" class="items">Art & Humanities</a><br>
+                            <a href="" class="items">Digtal Marketing</a><br>
+                            <a href="" class="items">Finance & Accounting</a><br>
+                            <a href="" class="items">Graphic Design</a><br>
+                            <a href="" class="items">IT and Software</a><br>
+                            <a href="" class="items">Personal Development</a><br>
+                            <a href="" class="items">Photohraphy</a><br>
+                            <a href="" class="items">Sales Marketing</a><br>
+                            <a href="" class="items">Social Sciences</a><br>
+                            <a href="" class="items">Web Development</a><br>
                         </div>
                     </div>
-                    <div class="toggle-items">
-                        <a href="" class="items">Art & Humanities</a><br>
-                        <a href="" class="items">Digtal Marketing</a><br>
-                        <a href="" class="items">Finance & Accounting</a><br>
-                        <a href="" class="items">Graphic Design</a><br>
-                        <a href="" class="items">IT and Software</a><br>
-                        <a href="" class="items">Personal Development</a><br>
-                        <a href="" class="items">Photohraphy</a><br>
-                        <a href="" class="items">Sales Marketing</a><br>
-                        <a href="" class="items">Social Sciences</a><br>
-                        <a href="" class="items">Web Development</a><br>
-                    </div>
-                </div>
-
-                <script>
-                    $("#toggle-button").on('click', function () {
-                        $(".toggle-items").animate({
-                            height: "toggle",
-
+    
+                    <script>
+                        $("#toggle-button").on('click', function () {
+                            $(".toggle-items").animate({
+                                height: "toggle",
+    
+                            })
                         })
-                    })
-                </script>
-                <div class="menu closed">
+                    </script>
+                </div>
+                
+                <div class="menu flex closed">
                     <ul class="flex align-items-center nav-items">
                         <li class="mx-3"><a class="nav-link" href="">Home</a></li>
                         <li class="mx-3"><a class="nav-link" href="">Courses</a></li>
                         <li class="mx-3"><a class="nav-link" href="">Blog</a></li>
-                        <li class="mx-3"><a class="nav-link" href="">Shop</a></li>
                         <li class="mx-3"><a class="nav-link" href="">Contact</a></li>
                     </ul>
+                    <div class="button flex ">
+                        <div class="search-icon mx-3">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="cart-icon mx-3">
+                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="login-button mx-3">
+                            <a href="login.blade.html">Login</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="middle">
-                    <form class="search-box" action="index.html" method="post">
-                        <input type="text" class="input">
-                        <button type="button" class="btn" name="button"></button>
-                    </form>
-                </div>
-                <script>
-                    $(".btn").on("click", function () {
-                        $(".input").toggleClass("inclicked");
-                        $(".btn").toggleClass("close");
-                    })
-                </script>
+
+                
             </div>
         </div>
     </div>
