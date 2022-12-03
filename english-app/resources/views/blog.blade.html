@@ -13,7 +13,7 @@
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/9ce611c48b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Home</title>
+    <title>Blog</title>
     <style>
         /* Common */
         .y-color {
@@ -497,163 +497,200 @@
         .slider-box-items {
             animation: FadeIn 1s linear forwards;
         }
+
         footer a {
-  height: 40px;
-}
+            height: 40px;
+        }
 
-footer .link,
-footer a i {
-  line-height: 40px;
-}
+        footer .link,
+        footer a i {
+            line-height: 40px;
+        }
 
-footer a i {
-  padding: 0 12px;
-  font-size: 20px;
-}
+        footer a i {
+            padding: 0 12px;
+            font-size: 20px;
+        }
 
-footer .follow {
-  margin-left: 10px;
-  font-size: 18px;
-}
+        footer .follow {
+            margin-left: 10px;
+            font-size: 18px;
+        }
 
-footer .follow,
-footer h5 {
-  color: #0d6efd;
-}
-footer h5 {
-  line-height: 40px;
-}
+        footer .follow,
+        footer h5 {
+            color: #0d6efd;
+        }
 
-footer .single-footer {
-  margin-bottom: 50px;
-}
+        footer h5 {
+            line-height: 40px;
+        }
 
-footer ul {
-  list-style-type: none;
-  padding: 0;
-}
+        footer .single-footer {
+            margin-bottom: 50px;
+        }
 
-/* Responsive */
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-@media (max-width: 1200px) {
-  .navbar .brand,
-  .nav-list {
-    flex: 2;
-  }
+        /* Responsive */
 
-  .navbar .explore {
-    display: flex !important;
-  }
+        @media (max-width: 1200px) {
 
-  .navbar .nav-ul {
-    display: none !important;
-  }
+            .navbar .brand,
+            .nav-list {
+                flex: 2;
+            }
 
-  .navbar .nav-brand {
-    display: none !important;
-  }
+            .navbar .explore {
+                display: flex !important;
+            }
 
-  .navbar .nav-brand-sm {
-    display: flex !important;
-  }
-  .navbar .nav-brand-sm img {
-    margin-left: 0;
-  }
+            .navbar .nav-ul {
+                display: none !important;
+            }
 
-  .navbar .search-tablet {
-    display: flex !important;
-  }
+            .navbar .nav-brand {
+                display: none !important;
+            }
 
-  .nav-list .search-pc {
-    display: none !important;
-  }
+            .navbar .nav-brand-sm {
+                display: flex !important;
+            }
 
-  .cart {
-    display: none !important;
-  }
-}
+            .navbar .nav-brand-sm img {
+                margin-left: 0;
+            }
 
-@media (max-width: 992px) {
-  .ter {
-    flex-flow: column;
-  }
+            .navbar .search-tablet {
+                display: flex !important;
+            }
 
-  footer .logo {
-    margin-bottom: 1rem;
-  }
+            .nav-list .search-pc {
+                display: none !important;
+            }
 
-  .sidebar {
-    margin-top: 16px;
-  }
-}
+            .cart {
+                display: none !important;
+            }
+        }
 
-@media (max-width: 768px) {
-  .navbar .search-sm {
-    display: flex !important;
-  }
+        @media (max-width: 992px) {
+            .ter {
+                flex-flow: column;
+            }
 
-  .navbar .search-tablet {
-    display: none !important;
-  }
+            footer .logo {
+                margin-bottom: 1rem;
+            }
 
-  .course-found {
-    margin-bottom: 16px !important;
-  }
+            .sidebar {
+                margin-top: 16px;
+            }
+        }
 
-  .btns {
-    padding: 9px 20px;
-  }
+        @media (max-width: 768px) {
+            .navbar .search-sm {
+                display: flex !important;
+            }
 
-  .cart-icon {
-    display: none !important;
-  }
-}
+            .navbar .search-tablet {
+                display: none !important;
+            }
 
-@media (max-width: 576px) {
-  .main #content .filter {
-    justify-content: flex-start !important;
-  }
+            .course-found {
+                margin-bottom: 16px !important;
+            }
 
-  .btns {
-    padding: 9px 16px;
-  }
-  footer .link {
-    font-size: 16px;
-    font-weight: 400;
-  }
+            .btns {
+                padding: 9px 20px;
+            }
 
-  .foot {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+            .cart-icon {
+                display: none !important;
+            }
+        }
 
-  .foot .logo-name {
-    font-size: 32px;
-  }
+        @media (max-width: 576px) {
+            .main #content .filter {
+                justify-content: flex-start !important;
+            }
 
-  .single-footer p {
-    text-align: center !important;
-  }
+            .btns {
+                padding: 9px 16px;
+            }
 
-  .social-foot {
-    justify-content: center;
-  }
+            footer .link {
+                font-size: 16px;
+                font-weight: 400;
+            }
 
-  .footer-tittle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+            .foot {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
-  .footer-tittle h5 {
-    font-size: 24px;
-  }
+            .foot .logo-name {
+                font-size: 32px;
+            }
 
-  .footer-tittle ul {
-    display: contents;
-  }
-}
+            .single-footer p {
+                text-align: center !important;
+            }
+
+            .social-foot {
+                justify-content: center;
+            }
+
+            .footer-tittle {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-tittle h5 {
+                font-size: 24px;
+            }
+
+            .footer-tittle ul {
+                display: contents;
+            }
+        }
+
+        ol {
+            list-style: none;
+        }
+
+        /*blog*/
+        .categories-name {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #6440fb;
+            text-transform: uppercase;
+        }
+        .image-blog img{
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .more{
+            width: 8rem;
+            height: 3rem;
+            border: none;
+            background-color: #6440FB17;
+            border-radius: 10px;
+        }
+        .more:hover{
+            background-color: #6440FB;
+        }
+        .more a{
+            color: #6440FB;
+        }
+        .more:hover a{
+            color: white;
+        }
     </style>
 </head>
 
@@ -773,291 +810,104 @@ footer ul {
                 return window.pageYOffset || document.documentElement.scrollTop;
             }
         })
-
     </script>
-    <div class="home-main mt-2 mb-5">
-        <section class="container">
-            <div class="row">
-                <div class="main-page col-12 position-relative">
-                    <div class="background">
-                    </div>
-                    <div class="content container animate__animated animate__fadeInUp">
-                        <div class="row justify-content-between">
-                            <div class="col-12 col-md-6 heading">
-                                <div>
-                                    <h4 class="mb-4">Start learning for free</h4>
-                                    <h1 class="mb-4">Explore your creativity
-                                        with thousands of
-                                        online classes.</h1>
-                                    <button type="button" class="btn login-btn btns">
-                                        <a href="">Find Courses</a>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 items">
-                                <div class="special">
-                                    <img src="/english-app/public/asset/image/home9-1.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="container mb-5">
-        <hr>
-    </div>
-    <div class="top-categories mb-5">
-        <div class="container p-5">
-            <div class="flex justify-content-between">
-                <div class="heading-box-items">
-                    <h2>Top Categories</h2>
-                    <p>The Top Courses</p>
-                </div>
-                <div>
-                    <button class="button-box-items"><a href="">All Categories</a></button>
-                </div>
-            </div>
+    <div class="">
+        <div class="container">
             <div>
-                <div class="categories-box">
-                    <div class="categories-box-items row justify-content-between gx-2 mb-4">
-                        <div class="col-lg-3 col-6">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="/english-app/public/asset/image/1-1.png" alt="">
-                                </div>
-                                <div class="col-md-6 items-content">
-                                    <div class="mt-3">
-                                        <h6>Digtal Marketing</h6>
-                                    </div>
-                                    <div>
-                                        <p>4 Courses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="/english-app/public/asset/image/1-1.png" alt="">
-                                </div>
-                                <div class="col-md-6 items-content">
-                                    <div class="mt-3">
-                                        <h6>Digtal Marketing</h6>
-                                    </div>
-                                    <div>
-                                        <p>4 Courses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="/english-app/public/asset/image/1-1.png" alt="">
-                                </div>
-                                <div class="col-md-6 items-content">
-                                    <div class="mt-3">
-                                        <h6>Digtal Marketing</h6>
-                                    </div>
-                                    <div>
-                                        <p>4 Courses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="/english-app/public/asset/image/1-1.png" alt="">
-                                </div>
-                                <div class="col-md-6 items-content">
-                                    <div class="mt-3">
-                                        <h6>Digtal Marketing</h6>
-                                    </div>
-                                    <div>
-                                        <p>4 Courses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="categories-box-items row gx-2">
-                        <div class="col-lg-3 col-6">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="/english-app/public/asset/image/1-1.png" alt="">
-                                </div>
-                                <div class="col-md-6 items-content">
-                                    <div class="mt-3">
-                                        <h6>Digtal Marketing</h6>
-                                    </div>
-                                    <div>
-                                        <p>4 Courses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="/english-app/public/asset/image/1-1.png" alt="">
-                                </div>
-                                <div class="col-md-6 items-content">
-                                    <div class="mt-3">
-                                        <h6>Digtal Marketing</h6>
-                                    </div>
-                                    <div>
-                                        <p>4 Courses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="/english-app/public/asset/image/1-1.png" alt="">
-                                </div>
-                                <div class="col-md-6 items-content">
-                                    <div class="mt-3">
-                                        <h6>Digtal Marketing</h6>
-                                    </div>
-                                    <div>
-                                        <p>4 Courses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="/english-app/public/asset/image/1-1.png" alt="">
-                                </div>
-                                <div class="col-md-6 items-content">
-                                    <div class="mt-3">
-                                        <h6>Digtal Marketing</h6>
-                                    </div>
-                                    <div>
-                                        <p>4 Courses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                Home > Blog
             </div>
-
         </div>
     </div>
-    <div class="top-course mb-5">
+    <div class="blog mt-5 mb-5">
         <div class="container">
             <div class="row mb-4">
-                <div class="col-6 col-md-6">
-                    <div class="top-course-title">
-                        <h2>
-                            The Top Courses
-                        </h2>
-                        <p>The top Courses</p>
-                    </div>
+                <div class="col-12 col-lg-6 image-blog p-4">
+                    <img class="img-fluid" src="/english-app/public/asset/image/blog-1.jpeg" alt="">
                 </div>
-                <div class="row">
-                    <div class="slider-box flex">
-                        <div class="slider-box-items mx-3 ">
-                            <div class="card" style="width: 16rem;">
-                                <img class="card-img-top" src="/english-app/public/asset/image/slide-img.jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">500+ TOEIC </h5>
-                                    <div class="rate">
-                                        <p>Education Software and PHP and JS System Script</p>
-                                    </div>
-                                    <a href="#" class="btn btn-primary">Buy now</a>
-                                </div>
-                            </div>
+                <div class="col-12 col-lg-6 p-lg-5">
+                    <div class="flex mb-4">
+                        <div class="list-categories mx-2">
+                            <a class="categories-name" href="">Gym</a>
                         </div>
-                        <div class="slider-box-items mx-3">
-                            <div class="card" style="width: 16rem;">
-                                <img class="card-img-top" src="/english-app/public/asset/image/slide-1.jpeg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">500+ TOEIC </h5>
-                                    <div class="rate">
-                                        <p>Education Software and PHP and JS System Script</p>
-                                    </div>
-                                    <a href="#" class="btn btn-primary">Buy now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-box-items mx-3">
-                            <div class="card" style="width: 16rem;">
-                                <img class="card-img-top" src="/english-app/public/asset/image/slide-2.jpeg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">500+ TOEIC </h5>
-                                    <div class="rate">
-                                        <p>Education Software and PHP and JS System Script</p>
-                                    </div>
-                                    <a href="#" class="btn btn-primary">Buy now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-box-items mx-3">
-                            <div class="card" style="width: 16rem;">
-                                <img class="card-img-top" src="/english-app/public/asset/image/slide-3.jpeg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">500+ TOEIC </h5>
-                                    <div class="rate">
-                                        <p>Education Software and PHP and JS System Script</p>
-                                    </div>
-                                    <a href="#" class="btn btn-primary">Buy now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-box-items mx-3">
-                            <div class="card" style="width: 16rem;">
-                                <img class="card-img-top" src="/english-app/public/asset/image/slide-4.jpeg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">500+ TOEIC </h5>
-                                    <div class="rate">
-                                        <p>Education Software and PHP and JS System Script</p>
-                                    </div>
-                                    <a href="#" class="btn btn-primary">Buy now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-box-items mx-3">
-                            <div class="card" style="width: 16rem;">
-                                <img class="card-img-top" src="/english-app/public/asset/image/slide-5.jpeg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">500+ TOEIC </h5>
-                                    <div class="rate">
-                                        <p>Education Software and PHP and JS System Script</p>
-                                    </div>
-                                    <a href="#" class="btn btn-primary">Buy now</a>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="date">July 28, 2022</div>
                     </div>
-                    <button class="next">
-                        <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
+                    <h4 class="entry-title mb-2">10 marketing trends that you should be prepared for in 2022</h4>
+                    <div class="description mb-4">What makes a good brand book? Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus vestibulum ...</div>
+                    <button class="more">
+                        <a href="">Read More</a>
                     </button>
-                    <button class="prev">
-                        <i class="fa-sharp fa-solid fa-arrow-left-long"></i>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 col-lg-6 image-blog p-4">
+                    <img class="img-fluid" src="/english-app/public/asset/image/blog-1.jpeg" alt="">
+                </div>
+                <div class="col-12 col-lg-6 p-lg-5">
+                    <div class="flex mb-4">
+                        <div class="list-categories mx-2">
+                            <a class="categories-name" href="">Gym</a>
+                        </div>
+                        <div class="date">July 28, 2022</div>
+                    </div>
+                    <h4 class="entry-title mb-2">10 marketing trends that you should be prepared for in 2022</h4>
+                    <div class="description mb-4">What makes a good brand book? Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus vestibulum ...</div>
+                    <button class="more">
+                        <a href="">Read More</a>
                     </button>
-                    <script>
-                        $(".next").click(function () {
-                            let list = document.querySelectorAll('.slider-box-items');
-                            $(".slider-box").append(list[0]);
-                        })
-                        $(".prev").click(function () {
-                            let list = document.querySelectorAll('.slider-box-items');
-                            $(".slider-box").prepend(list[list.length - 1]);
-                        })
-                    </script>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 col-lg-6 image-blog p-4">
+                    <img class="img-fluid" src="/english-app/public/asset/image/blog-1.jpeg" alt="">
+                </div>
+                <div class="col-12 col-lg-6 p-lg-5">
+                    <div class="flex mb-4">
+                        <div class="list-categories mx-2">
+                            <a class="categories-name" href="">Gym</a>
+                        </div>
+                        <div class="date">July 28, 2022</div>
+                    </div>
+                    <h4 class="entry-title mb-2">10 marketing trends that you should be prepared for in 2022</h4>
+                    <div class="description mb-4">What makes a good brand book? Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus vestibulum ...</div>
+                    <button class="more">
+                        <a href="">Read More</a>
+                    </button>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 col-lg-6 image-blog p-4">
+                    <img class="img-fluid" src="/english-app/public/asset/image/blog-1.jpeg" alt="">
+                </div>
+                <div class="col-12 col-lg-6 p-lg-5">
+                    <div class="flex mb-4">
+                        <div class="list-categories mx-2">
+                            <a class="categories-name" href="">Gym</a>
+                        </div>
+                        <div class="date">July 28, 2022</div>
+                    </div>
+                    <h4 class="entry-title mb-2">10 marketing trends that you should be prepared for in 2022</h4>
+                    <div class="description mb-4">What makes a good brand book? Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus vestibulum ...</div>
+                    <button class="more">
+                        <a href="">Read More</a>
+                    </button>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 col-lg-6 image-blog p-4">
+                    <img class="img-fluid" src="/english-app/public/asset/image/blog-1.jpeg" alt="">
+                </div>
+                <div class="col-12 col-lg-6 p-lg-5">
+                    <div class="flex mb-4">
+                        <div class="list-categories mx-2">
+                            <a class="categories-name" href="">Gym</a>
+                        </div>
+                        <div class="date">July 28, 2022</div>
+                    </div>
+                    <h4 class="entry-title mb-2">10 marketing trends that you should be prepared for in 2022</h4>
+                    <div class="description mb-4">What makes a good brand book? Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus vestibulum ...</div>
+                    <button class="more">
+                        <a href="">Read More</a>
+                    </button>
                 </div>
             </div>
         </div>
